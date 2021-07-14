@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "leo-demo-site"
+  },
+  "targets": {
+    "leo-demo-site": {
+      "hosting": {
+        "pacman": [
+          "leo-events-pacman"
+        ]
+      }
+    }
+  }
+}

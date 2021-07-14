@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "public",
+    "target": "pacman",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(datagz|memgz|mem|data)",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      } 
+    ]
+  }
+}
